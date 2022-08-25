@@ -5,50 +5,41 @@ const porta = 3000;
 
 // Rotas
 
-// GET
-// Rota para raiz da API
-app.get('/', (reg, res) => {
-    res.send('É um dia lindo para aprender sobre APIs');
+// Rota (endpoint) para a raiz da API
+app.get('/', (req, res) => {
+    res.send(`Página inicial da Aplicação (Raiz da API).`);
 });
 
 // Rota (endpoint) para exibir todos os alunos
-// GET
-app.get('/alunos', (reg, res) => {
-    res.send('Exibindo todos os alunos');
+app.get('/alunos', (req, res) => {
+    res.send(`Exibe TODOS os alunos`);
 });
-
-// Rota (endpoint) para exibir UM único aluno
-app.get('/alunos/:id', (reg, res) => {
-    res.send('Exibindo dados de UM aluno');
-});
-
-
-// POST
-// INSERIR alunos
-app.post('/alunos', (reg, res) => {
-    res.send('INSERINDO alunos');
-});
-// INSERINDO ALGUNS
-app.post('/alunos/:id', (reg, res) => {
-    res.send('INSERINDO alunos');
-});
-
-// PUT
-app.put('/alunos/:id', (reg, res) => {
-    res.send('ATUALIZANDO alguns/todos os dados de um aluno.');
+// Rota (endpoint) para exibir um único aluno
+app.get('/alunos/:id', (req, res) => {
+    res.send(`Exibe dados de UM aluno.`)
 });
 
 
-// PATCH
-app.patch('/alunos/:id', (reg, res) => {
-    res.send('ATUALIZANDO alguns/todos os dados de um aluno.');
+// Rota (endpoint) para INSERIR alunos
+app.post('/alunos', (req, res) => {
+    res.send(`ADICIONA aluno.`)
 });
 
-// DELETE
-app.delete('/alunos/:id', (reg, res) => {
-    res.send('EXCLUINDI aluno.');
+
+// Rota (endpoint) para atualizar TODOS os dados do aluno
+app.put('/alunos/:id', (req, res) => {
+    res.send(`ATUALIZA TODOS os dados de um aluno.`)
+});
+// Rota (endpoint) para atualizar ALGUNS/TODOS os dados do aluno
+app.patch('/alunos/:id', (req, res) => {
+    res.send(`ATUALIZA ALGUNS/todos os dados de um aluno.`)
 });
 
+
+// Rota (endpoint) para EXCLUIR aluno
+app.delete('/alunos/:id', (req, res) => {
+    res.send(`EXCLUI aluno.`)
+});
 
 
 // configurando servidor
