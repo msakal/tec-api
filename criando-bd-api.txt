@@ -1,0 +1,27 @@
+https://temp-mail.org/ (criar email temporario)
+
+db4free.net
+
+nome bd: escolamsa
+nome mysql: adminmsa
+psw:senac*123
+
+** após fazer a confirmação no email temporario.
+
+>> confirmação do db4free
+https://www.db4free.net/phpMyAdmin/
+Banco de dados: escolamsa
+Nome de usuário: adminmsa
+Email: yosof92498@otodir.com
+
+
+entrar no cpanel
+criar bd no assistente bd
+
+Usuário: alvoea33_esc-msa
+Banco de dados: alvoea33_esc-msa
+psw: msa123
+
+DNS
+NS 1
+ns350.hostgator.com.br
