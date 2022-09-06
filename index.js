@@ -5,6 +5,9 @@ const app = express();
 // process.env.PORT -->> pega qq porta do servidor externo disponível ou 3000 (local)
 const porta = process.env.PORT || 3000;
 
+// Habilitando configurando requisições de diferentes origens
+// app.use(cors());
+
 // Configurando suporte ao formato JSON
 app.use(express.json());
 

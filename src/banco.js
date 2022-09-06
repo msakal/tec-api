@@ -3,16 +3,16 @@ import mysql from 'mysql2';
 // configurando a conexão
 const conexao = mysql.createConnection({
     // Local ...
-    // host: 'localhost',
-    // user: 'root',
-    // password: '',
-    // database: 'escola'
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'escola'
 
     // Remoto ...
-    host: 'ns350.hostgator.com.br',
-    user: 'alvoea33_esc-msa',
-    password: 'msa123',
-    database: 'alvoea33_esc-msa'
+    // host: 'ns350.hostgator.com.br',
+    // user: 'alvoea33_esc-msa',
+    // password: 'msa123',
+    // database: 'alvoea33_esc-msa'
 });
 
 
